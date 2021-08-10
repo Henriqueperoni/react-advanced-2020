@@ -7,7 +7,11 @@ const UseStateBasics = () => {
     const [text, setText] = useState("random title");
 
     const handleClick = () => {
-        setText("hello people");
+        if (text === "random title") {
+            setText("hello people");
+        } else {
+            setText("random title");
+        }
     };
     return (
         <React.Fragment>
